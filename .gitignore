@@ -36,16 +36,16 @@ uploads/
 !README.md
 # Ignore everything in "plugins" except certain plugins. #
 # ========================================================== #
-plugins/*
+# plugins/*
 # Ignore everything in "themes" except the active theme. #
 # ========================================================== #
 themes/*
-!themes/quotes/
+!themes/alnur-theme/
 # Ignore WP Migrate DB Dir #
 # =============== #
 uploads/wp-migrate-db/
 # Ignore packages #
 # =============== #
-themes/quotes/node_modules/
-themes/quotes/assets
-Collapse
+# themes/quotes/node_modules/
+# themes/quotes/assets
+# Collapse
