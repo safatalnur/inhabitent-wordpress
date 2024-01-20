@@ -9,4 +9,7 @@ function alnur_scripts() {
 
 add_action('wp_enqueue_scripts', 'alnur_scripts');
 
+// Add theme support
+    add_theme_support('post-thumbnails');
+
 ?>
