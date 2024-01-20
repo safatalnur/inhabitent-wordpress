@@ -1,0 +1,45 @@
+/*
+Theme Name: Alnur Theme
+Author: Safat Alnur
+Description: A Complete Customizable Theme
+Version: 1.0
+License: GNU General Public license v2 or later
+Text Domain: alnur
+*/
+
+// Import variables, functions, and mixins
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/structure";
+@import "abstracts/variables";
+
+// Import resets, and typography
+@import "base/reset";
+@import "base/typography";
+
+// Import buttons, carousel, and slider
+@import "components/buttons";
+@import "components/carousel";
+@import "components/slider";
+
+// Import footer, forms, grid, header, navigation, and sidebar
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/sidebar";
+
+// Import 404, about, adventures, contact, home, journal, shop, and search
+@import "pages/404";
+@import "pages/about";
+@import "pages/adventures";
+@import "pages/contact";
+@import "pages/home";
+@import "pages/journal";
+@import "pages/search";
+@import "pages/shop";
+
+// Import admin, and theme
+@import "themes/admin";
+@import "themes/theme";
