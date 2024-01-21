@@ -102,5 +102,31 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+.home-hero {
+  position: relative;
+}
+.home-hero__img {
+  filter: brightness(50%);
+  height: auto;
+  width: 100%;
+}
+.home-hero__logo {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+}
+
+@media only screen and (min-width: 576px) {
+  .home-hero__logo {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home-hero__logo {
+    width: auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
