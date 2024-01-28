@@ -1,6 +1,41 @@
 // fonts
 
-$font-primary: 'Novecento Web demiBold';
-$font-sub-heading: 'Novecento Web';
-$font-text: 'Merriweather Web Light';
-$font-accent: 'Merriweather Web bold';
+$font-primary: "Novecento Web demiBold";
+$font-sub-heading: "Novecento Web";
+$font-text: "Merriweather Web Light";
+$font-accent: "Merriweather Web bold";
+
+$font-size: 16px;
+$line-height: 1.6rem;
+$line-spacing: 1.5rem;
+
+// colors
+
+$primary-color: #101010;
+$secondary-color: #d99054;
+$text-color: #404040;
+$accent-color: #248a83;
+$border-color: #e1e1e1;
+$white-color: #fff;
+$black-color: #000;
+
+// headings and paragraph
+
+h2 {
+  font-family: $font-primary;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: $font-primary;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: $font-primary;
+  font-size: 1.25rem;
+}
+
+p {
+  font-family: $font-text;
+}
