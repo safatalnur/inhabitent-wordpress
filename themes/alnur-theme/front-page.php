@@ -5,7 +5,7 @@
 <?php if ( have_posts()) :
     while ( have_posts() ):
         the_post();?>
-        <section class="home-hero">
+        <section id="home-hero" class="home-hero">
             <?php the_post_thumbnail('full', array (
                 'class'=>'home-hero__img'
             ));?>
@@ -15,6 +15,9 @@
                 print_r($logo_img);
             ?> -->
             <!-- ########## -->
+        </section>
+        <section id="home-shop" class="home-shop">
+            <h2 class="home-shop__heading">Shop Stuff</h2>
         </section>
         <?php the_content();?>
     <?php endwhile; else: ?>
