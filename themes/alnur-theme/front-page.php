@@ -18,6 +18,29 @@
         </section>
         <section id="home-shop" class="home-shop">
             <h2 class="home-shop__heading">Shop Stuff</h2>
+
+            <div class="home-shop__container">
+                <?php 
+                    $terms = get_terms(array(
+                        'taxonomy'  => 'product-type',
+                        'hide-empty'    => false,
+                    ));
+
+                    if( ! empty($terms)):
+                ?>
+                    <div class="home-shop__list">
+                        <?php foreach ($terms as $term) :?>
+                            <div class="home-shop__item">
+                                <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/svg/<?php echo $term->slug;?>.svg">
+                                <p><?php echo $term->description;?></p>
+                                <div class="btn home-shop__btn">
+                                    <a class="home-shop__btn--color" href="<?php echo get_term_link($term);?>"><?php echo $term->name;?> stuff</a>
+                                </div>
+                            </div>
+                        <?php endforeach;?>
+                    </div>
+                    <?php endif;?>
+            </div>
         </section>
         <?php the_content();?>
     <?php endwhile; else: ?>
