@@ -18,10 +18,59 @@
   }
 }
 
+// Home Shop Stuff block
+.home-shop {
+  margin-left: 2em;
+  margin-right: 2em;
+
+  &__heading {
+    margin: 50px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  &__item {
+    border: 1px solid #e1e1e1;
+    border-top: 3px solid #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-around;
+    max-width: 300px;
+    padding: 0 2em;
+    img {
+      width: 100px;
+      margin: 20px auto;
+    }
+    p {
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    margin: 30px auto;
+  }
+}
+
 @media only screen and (min-width: $query__sm) {
   .home-hero {
     &__logo {
       width: 40%;
+    }
+  }
+
+  // Home Shop Stuff Block
+  .home-shop {
+    &__item {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
@@ -32,11 +81,32 @@
       width: auto;
     }
   }
+
+  // Home Shop Stuff Block
+  .home-shop {
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__item {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }
 
 @media only screen and (min-width: $query__lg) {
 }
 @media only screen and (min-width: $query__xl) {
+  .home-shop {
+    &__container {
+      max-width: 1600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 @media only screen and (min-width: $query__xxl) {
 }

@@ -24,7 +24,9 @@
                     $terms = get_terms(array(
                         'taxonomy'  => 'product-type',
                         'hide-empty'    => false,
-                    ));
+                        'orderby'   => 'name',
+                        'order' => 'ASC',
+                    )); 
 
                     if( ! empty($terms)):
                 ?>
@@ -34,7 +36,7 @@
                                 <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/svg/<?php echo $term->slug;?>.svg">
                                 <p><?php echo $term->description;?></p>
                                 <div class="btn home-shop__btn">
-                                    <a class="home-shop__btn--color" href="<?php echo get_term_link($term);?>"><?php echo $term->name;?> stuff</a>
+                                    <a class="btn--green" href="<?php echo get_term_link($term);?>"><?php echo $term->name;?> stuff</a>
                                 </div>
                             </div>
                         <?php endforeach;?>
