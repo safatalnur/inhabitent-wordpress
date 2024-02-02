@@ -10,8 +10,37 @@ function alnur_scripts() {
 add_action('wp_enqueue_scripts', 'alnur_scripts');
 
 // Add theme support
+function inhabitent_features() {
     add_theme_support('post-thumbnails');
+    register_nav_menus(
+        array(
+            'primary_menu'  => __('Primary Menu', 'text_domain'),
+            'footer_menu'   => __('Footer Menu', 'text_domain')
+        )
+    );
+}
 
+add_action ('after_setup_theme', 'inhabitent_features');
+
+// Navigation Bar logo colour changes 
+
+function nav_bar_color() {
+    if ( !is_page('home')) {?>
+        <style>
+            .nav-bar-left__logo--green {
+                display: none;
+            }
+        </style>
+    <?php } else { ;?> 
+        <style>
+            .nav-bar-left__logo--white {
+                display: none;
+            }
+        </style>
+    <?php }
+}
+
+add_action( 'init', 'nav_bar_color' );
 
 //Custom post type
 
