@@ -1,0 +1,42 @@
+.hero-banner {
+  position: relative;
+
+  &__img {
+    filter: brightness(50%);
+    height: auto;
+    width: 100%;
+  }
+
+  &__logo {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: $query__sm) {
+  .hero-banner {
+    &__logo {
+      width: 40%;
+    }
+  }
+}
+
+@media only screen and (min-width: $query__md) {
+  .hero-banner {
+    &__logo {
+      width: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: $query__lg) {
+}
+@media only screen and (min-width: $query__xl) {
+}
+@media only screen and (min-width: $query__xxl) {
+}
+@media only screen and (min-width: $query__xxxl) {
+}

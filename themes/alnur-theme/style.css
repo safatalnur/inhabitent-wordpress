@@ -225,15 +225,15 @@ table {
   color: #fff;
 }
 
-.home-hero {
+.hero-banner {
   position: relative;
 }
-.home-hero__img {
+.hero-banner__img {
   filter: brightness(50%);
   height: auto;
   width: 100%;
 }
-.home-hero__logo {
+.hero-banner__logo {
   left: 50%;
   position: absolute;
   top: 50%;
@@ -241,6 +241,16 @@ table {
   width: 40%;
 }
 
+@media only screen and (min-width: 576px) {
+  .hero-banner__logo {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero-banner__logo {
+    width: auto;
+  }
+}
 .home-shop {
   margin-left: 2em;
   margin-right: 2em;
@@ -278,18 +288,12 @@ table {
 }
 
 @media only screen and (min-width: 576px) {
-  .home-hero__logo {
-    width: 40%;
-  }
   .home-shop__item {
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media only screen and (min-width: 768px) {
-  .home-hero__logo {
-    width: auto;
-  }
   .home-shop__list {
     flex-direction: row;
     flex-wrap: wrap;
