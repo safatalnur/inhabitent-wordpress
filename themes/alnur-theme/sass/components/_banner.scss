@@ -14,6 +14,18 @@
     transform: translate(-50%, -50%);
     width: 40%;
   }
+
+  &__heading {
+    left: 50%;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &--white {
+      color: $white-color;
+    }
+  }
 }
 
 @media only screen and (min-width: $query__sm) {
