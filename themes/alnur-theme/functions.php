@@ -40,7 +40,7 @@ function nav_bar_color() {
     <?php }
 }
 
-add_action( 'init', 'nav_bar_color' );
+add_action( 'wp', 'nav_bar_color' );
 
 //Custom post type
 
