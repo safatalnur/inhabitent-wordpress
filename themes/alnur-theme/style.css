@@ -30,6 +30,108 @@ p {
   font-family: "Merriweather Web Light";
 }
 
+@media only screen and (min-width: 576px) {
+  p {
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.65rem;
+  }
+  h4 {
+    font-size: 1.375rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.15rem;
+  }
+  h1 {
+    font-size: 2.875rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+  h3 {
+    font-size: 1.725rem;
+  }
+  h4 {
+    font-size: 1.4375rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  p {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  p {
+    font-size: 1.25rem;
+  }
+  h1 {
+    font-size: 3.125rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.875rem;
+  }
+  h4 {
+    font-size: 1.5625rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  p {
+    font-size: 1.3rem;
+  }
+  h1 {
+    font-size: 3.25rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+  }
+  h3 {
+    font-size: 1.95rem;
+  }
+  h4 {
+    font-size: 1.625rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  p {
+    font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-size: 2.1rem;
+  }
+  h4 {
+    font-size: 1.75rem;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
