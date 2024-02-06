@@ -21,9 +21,9 @@
 
 <section id="archive-products" class="shop__container">
 <?php if ( have_posts()) :
-    $testings = query_posts(array(
+    query_posts(array(
         'post_type' => 'products',
-    ));    
+    )); 
     while ( have_posts() ):
         the_post();?>
         <div class="shop-card">
@@ -31,6 +31,7 @@
                 <img class="shop-card__img" src="<?php the_post_thumbnail_url('thumbnail');?>">
                 <figcaption class="shop-card__caption">
                     <p><?php echo the_title();?></p>
+                    <p><?php echo get_post_meta($post->ID, 'Price', true);?></p>
                 </figcaption>
             </a>
         </div>
