@@ -51,7 +51,7 @@ function inhabitent_post_type() {
         'has_archive'   => true,
         // 'show_in_rest'  => true,
         'menu_icon' => 'dashicons-products',
-        'supports'   => array('title', 'editor', 'excerpt', 'thumbnail'),
+        'supports'   => array('title', 'editor', 'excerpt', 'thumbnail', 'custom-fields'),
         'labels' => array(
             'name' => __('Products', 'textdomain'),
             'singular_name' => __('Product', 'textdomain'),
