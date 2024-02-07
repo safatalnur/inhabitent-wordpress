@@ -23,6 +23,9 @@
 <?php if ( have_posts()) :
     query_posts(array(
         'post_type' => 'products',
+        'orderby'   => 'name',
+        'order'     => 'ASC',
+
     )); 
     while ( have_posts() ):
         the_post();?>
